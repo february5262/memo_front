@@ -13,6 +13,7 @@
 		EF5B742E2B6DFB7E00158944 /* memo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF5B742C2B6DFB7E00158944 /* memo.xcdatamodeld */; };
 		EF5B74302B6DFB7F00158944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5B742F2B6DFB7F00158944 /* Assets.xcassets */; };
 		EF5B74332B6DFB7F00158944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5B74312B6DFB7F00158944 /* LaunchScreen.storyboard */; };
+		EF6CFC402B95E06500ECE1CE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6CFC3F2B95E06500ECE1CE /* User.swift */; };
 		EF85554C2B6F79BA00A2A862 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF85554B2B6F79BA00A2A862 /* LoginViewController.swift */; };
 		EFCE09732B80A32A00BBEE42 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCE09722B80A32A00BBEE42 /* JoinViewController.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		EF5B742F2B6DFB7F00158944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF5B74322B6DFB7F00158944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF5B74342B6DFB7F00158944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF6CFC3F2B95E06500ECE1CE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EF85554B2B6F79BA00A2A862 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EFCE09722B80A32A00BBEE42 /* JoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,17 +62,34 @@
 		EF5B74222B6DFB7E00158944 /* memo */ = {
 			isa = PBXGroup;
 			children = (
+				EF6CFC412B95E28200ECE1CE /* Controller */,
+				EF6CFC3E2B95E01900ECE1CE /* Model */,
 				EF5B74232B6DFB7E00158944 /* AppDelegate.swift */,
 				EF5B74252B6DFB7E00158944 /* SceneDelegate.swift */,
-				EF5B74272B6DFB7E00158944 /* ViewController.swift */,
 				EF5B742F2B6DFB7F00158944 /* Assets.xcassets */,
 				EF5B74312B6DFB7F00158944 /* LaunchScreen.storyboard */,
 				EF5B74342B6DFB7F00158944 /* Info.plist */,
 				EF5B742C2B6DFB7E00158944 /* memo.xcdatamodeld */,
+			);
+			path = memo;
+			sourceTree = "<group>";
+		};
+		EF6CFC3E2B95E01900ECE1CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF6CFC3F2B95E06500ECE1CE /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF6CFC412B95E28200ECE1CE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF5B74272B6DFB7E00158944 /* ViewController.swift */,
 				EF85554B2B6F79BA00A2A862 /* LoginViewController.swift */,
 				EFCE09722B80A32A00BBEE42 /* JoinViewController.swift */,
 			);
-			path = memo;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +168,7 @@
 				EF85554C2B6F79BA00A2A862 /* LoginViewController.swift in Sources */,
 				EFCE09732B80A32A00BBEE42 /* JoinViewController.swift in Sources */,
 				EF5B742E2B6DFB7E00158944 /* memo.xcdatamodeld in Sources */,
+				EF6CFC402B95E06500ECE1CE /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
