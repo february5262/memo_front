@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF17ED822C2BD6960059690A /* api-config.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF17ED812C2BD6960059690A /* api-config.swift */; };
+		EF3CE5372C31495C00CD4F6A /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3CE5362C31495C00CD4F6A /* Plane.swift */; };
+		EF3CE5392C3149BD00CD4F6A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3CE5382C3149BD00CD4F6A /* TableViewController.swift */; };
 		EF5B74242B6DFB7E00158944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5B74232B6DFB7E00158944 /* AppDelegate.swift */; };
 		EF5B74262B6DFB7E00158944 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5B74252B6DFB7E00158944 /* SceneDelegate.swift */; };
 		EF5B74282B6DFB7E00158944 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5B74272B6DFB7E00158944 /* ViewController.swift */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF17ED812C2BD6960059690A /* api-config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "api-config.swift"; sourceTree = "<group>"; };
+		EF3CE5362C31495C00CD4F6A /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		EF3CE5382C3149BD00CD4F6A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		EF5B74202B6DFB7E00158944 /* memo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5B74232B6DFB7E00158944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF5B74252B6DFB7E00158944 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +49,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF17ED802C2BD67F0059690A /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				EF17ED812C2BD6960059690A /* api-config.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		EF3CE5352C31494900CD4F6A /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EF3CE5362C31495C00CD4F6A /* Plane.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
 		EF5B74172B6DFB7E00158944 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +84,8 @@
 		EF5B74222B6DFB7E00158944 /* memo */ = {
 			isa = PBXGroup;
 			children = (
+				EF3CE5352C31494900CD4F6A /* Scene */,
+				EF17ED802C2BD67F0059690A /* Api */,
 				EF6CFC412B95E28200ECE1CE /* Controller */,
 				EF6CFC3E2B95E01900ECE1CE /* Model */,
 				EF5B74232B6DFB7E00158944 /* AppDelegate.swift */,
@@ -88,6 +112,7 @@
 				EF5B74272B6DFB7E00158944 /* ViewController.swift */,
 				EF85554B2B6F79BA00A2A862 /* LoginViewController.swift */,
 				EFCE09722B80A32A00BBEE42 /* JoinViewController.swift */,
+				EF3CE5382C3149BD00CD4F6A /* TableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -163,11 +188,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF5B74282B6DFB7E00158944 /* ViewController.swift in Sources */,
+				EF3CE5372C31495C00CD4F6A /* Plane.swift in Sources */,
 				EF5B74242B6DFB7E00158944 /* AppDelegate.swift in Sources */,
 				EF5B74262B6DFB7E00158944 /* SceneDelegate.swift in Sources */,
 				EF85554C2B6F79BA00A2A862 /* LoginViewController.swift in Sources */,
 				EFCE09732B80A32A00BBEE42 /* JoinViewController.swift in Sources */,
+				EF17ED822C2BD6960059690A /* api-config.swift in Sources */,
 				EF5B742E2B6DFB7E00158944 /* memo.xcdatamodeld in Sources */,
+				EF3CE5392C3149BD00CD4F6A /* TableViewController.swift in Sources */,
 				EF6CFC402B95E06500ECE1CE /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +336,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5D2URMV327;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = memo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -337,6 +366,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5D2URMV327;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = memo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
