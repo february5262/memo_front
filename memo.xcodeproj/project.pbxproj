@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		69D3CC552B96DB0E00A7D4FA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 69D3CC542B96DB0E00A7D4FA /* .gitignore */; };
-		69DCAB802B96CDF400A34BCC /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DCAB7F2B96CDF400A34BCC /* APIConstants.swift */; };
-		69DCAB822B96CE5400A34BCC /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DCAB812B96CE5400A34BCC /* NetworkResult.swift */; };
-		69DCAB852B96D05A00A34BCC /* Serivce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DCAB842B96D05A00A34BCC /* Serivce.swift */; };
-		99D26508EABD2587287CAB6A /* Pods_memo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BE97594F682D7BB8296708 /* Pods_memo.framework */; };
+		EF17ED822C2BD6960059690A /* api-config.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF17ED812C2BD6960059690A /* api-config.swift */; };
+		EF3CE5372C31495C00CD4F6A /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3CE5362C31495C00CD4F6A /* Plane.swift */; };
+		EF3CE5392C3149BD00CD4F6A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3CE5382C3149BD00CD4F6A /* TableViewController.swift */; };
 		EF5B74242B6DFB7E00158944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5B74232B6DFB7E00158944 /* AppDelegate.swift */; };
 		EF5B74262B6DFB7E00158944 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5B74252B6DFB7E00158944 /* SceneDelegate.swift */; };
 		EF5B74282B6DFB7E00158944 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5B74272B6DFB7E00158944 /* ViewController.swift */; };
@@ -24,13 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		35BE97594F682D7BB8296708 /* Pods_memo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		69D3CC542B96DB0E00A7D4FA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		69DCAB7F2B96CDF400A34BCC /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
-		69DCAB812B96CE5400A34BCC /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
-		69DCAB842B96D05A00A34BCC /* Serivce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serivce.swift; sourceTree = "<group>"; };
-		7D59BE6B8CE51A12449215EE /* Pods-memo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memo.debug.xcconfig"; path = "Target Support Files/Pods-memo/Pods-memo.debug.xcconfig"; sourceTree = "<group>"; };
-		CB10021268E3A031975BF14D /* Pods-memo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memo.release.xcconfig"; path = "Target Support Files/Pods-memo/Pods-memo.release.xcconfig"; sourceTree = "<group>"; };
+		EF17ED812C2BD6960059690A /* api-config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "api-config.swift"; sourceTree = "<group>"; };
+		EF3CE5362C31495C00CD4F6A /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		EF3CE5382C3149BD00CD4F6A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		EF5B74202B6DFB7E00158944 /* memo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5B74232B6DFB7E00158944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF5B74252B6DFB7E00158944 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,30 +50,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		593F58AEA9D89A0AB39F4315 /* Pods */ = {
+		EF17ED802C2BD67F0059690A /* Api */ = {
 			isa = PBXGroup;
 			children = (
-				7D59BE6B8CE51A12449215EE /* Pods-memo.debug.xcconfig */,
-				CB10021268E3A031975BF14D /* Pods-memo.release.xcconfig */,
+				EF17ED812C2BD6960059690A /* api-config.swift */,
 			);
-			path = Pods;
+			path = Api;
 			sourceTree = "<group>";
 		};
-		69DCAB832B96CE6000A34BCC /* Network */ = {
+		EF3CE5352C31494900CD4F6A /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				69DCAB7F2B96CDF400A34BCC /* APIConstants.swift */,
-				69DCAB812B96CE5400A34BCC /* NetworkResult.swift */,
+				EF3CE5362C31495C00CD4F6A /* Plane.swift */,
 			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		6E0453A4954ED5212E2B2368 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				35BE97594F682D7BB8296708 /* Pods_memo.framework */,
-			);
-			name = Frameworks;
+			path = Scene;
 			sourceTree = "<group>";
 		};
 		EF5B74172B6DFB7E00158944 = {
@@ -104,7 +88,8 @@
 		EF5B74222B6DFB7E00158944 /* memo */ = {
 			isa = PBXGroup;
 			children = (
-				69DCAB832B96CE6000A34BCC /* Network */,
+				EF3CE5352C31494900CD4F6A /* Scene */,
+				EF17ED802C2BD67F0059690A /* Api */,
 				EF6CFC412B95E28200ECE1CE /* Controller */,
 				EF6CFC3E2B95E01900ECE1CE /* Model */,
 				EF5B74232B6DFB7E00158944 /* AppDelegate.swift */,
@@ -132,6 +117,7 @@
 				EF5B74272B6DFB7E00158944 /* ViewController.swift */,
 				EF85554B2B6F79BA00A2A862 /* LoginViewController.swift */,
 				EFCE09722B80A32A00BBEE42 /* JoinViewController.swift */,
+				EF3CE5382C3149BD00CD4F6A /* TableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -252,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF5B74282B6DFB7E00158944 /* ViewController.swift in Sources */,
+				EF3CE5372C31495C00CD4F6A /* Plane.swift in Sources */,
 				EF5B74242B6DFB7E00158944 /* AppDelegate.swift in Sources */,
 				EF5B74262B6DFB7E00158944 /* SceneDelegate.swift in Sources */,
 				69DCAB852B96D05A00A34BCC /* Serivce.swift in Sources */,
@@ -259,7 +246,9 @@
 				EF85554C2B6F79BA00A2A862 /* LoginViewController.swift in Sources */,
 				69DCAB802B96CDF400A34BCC /* APIConstants.swift in Sources */,
 				EFCE09732B80A32A00BBEE42 /* JoinViewController.swift in Sources */,
+				EF17ED822C2BD6960059690A /* api-config.swift in Sources */,
 				EF5B742E2B6DFB7E00158944 /* memo.xcdatamodeld in Sources */,
+				EF3CE5392C3149BD00CD4F6A /* TableViewController.swift in Sources */,
 				EF6CFC402B95E06500ECE1CE /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +390,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5D2URMV327;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = memo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -431,6 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5D2URMV327;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = memo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
