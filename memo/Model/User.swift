@@ -11,3 +11,9 @@ struct User: Codable{
     var nickname: String
     var password: String
 }
+struct SignupResponse: Codable {
+    let status: Int
+    let success: Bool?
+    let message: String
+    let data: User?
+}
